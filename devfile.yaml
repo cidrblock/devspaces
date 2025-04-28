@@ -1,0 +1,15 @@
+schemaVersion: 2.2.2
+metadata:
+  name: -8231093b
+components:
+  - name: tooling-container
+    container:
+      image: registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-26-ansible-workspaces-rhel9
+      memoryRequest: 256M
+      memoryLimit: 6Gi
+      cpuRequest: 250m
+      cpuLimit: 2000m
+      args: ["tail", "-f", "/dev/null"]
+      env:
+        - name: KUBEDOCK_ENABLED
+          value: "true"
