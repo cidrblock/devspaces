@@ -1,1 +1,2 @@
 # devspaces
+# devspaces --force
