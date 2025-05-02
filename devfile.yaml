@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tooling-container
     container:
-      image: brew.registry.redhat.io/rh-osbs/ansible-automation-platform-26-ansible-workspaces-rhel9
+      image: ghcr.io/cidrblock/devspaces:latest
       memoryRequest: 256M
       memoryLimit: 6Gi
       cpuRequest: 250m
